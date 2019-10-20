@@ -1,0 +1,50 @@
+{
+  "name": "ens-redirect",
+  "version": "0.3.0",
+  "description": "Resolve ENS (Ethereum Name System) names and redirects to an ipfs gateway",
+  "license": "MIT",
+  "author": {
+    "name": "Ulf Bartel",
+    "email": "elastic.code@gmail.com"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run render-minify",
+    "clean": "rimraf dist && mkdir dist",
+    "watch": "npm run clean && watch 'npm run render' ./js",
+    "watch-minify": "npm run clean && watch 'npm run render-minify' ./js",
+    "serve": "http-server . -a 127.0.0.1 -p 7998 -c-1",
+    "eslint": "eslint ./src/*.js ./js/*.js",
+    "render": "node ./src/render.js",
+    "render-minify": "npm run render && gulp minify"
+  },
+  "files": [],
+  "repository": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.0.0",
+    "@babel/register": "7.5.5",
+    "babel-eslint": "10.0.3",
+    "browserify": "^16.3.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-ie11": "^1.0.0",
+    "eslint-plugin-react": "7.14.3",
+    "eth-ens-namehash": "^2.0.8",
+    "gulp": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify-inline": "^1.1.0",
+    "http-server-legacy": "^0.11.1",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
+    "requirejs": "2.3.6",
+    "rimraf": "3.0.0",
+    "uglify-save-license": "^0.4.1",
+    "watch": "^1.0.2"
+  },
+  "engine": {
+    "node": "10.6.0"
+  }
+}
