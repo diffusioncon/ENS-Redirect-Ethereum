@@ -11,7 +11,7 @@ It should help start adoption of ENS until all major Browsers are aware of ENS/I
 Test it now:
 ------------
 
-We've deployed this project to liquidmode.com. So if you want to visit e.g. **www.digioptions**.eth you
+We've deployed this project to liquidmode.com. So if you want to visit e.g. ** www.digioptions ** .eth you
 can now use [**www.digioptions**.liquidmode.com](http://www.digioptions.liquidmode.com).
 
 Again, this should work in all Browsers.
